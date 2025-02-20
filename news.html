@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>News</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/news.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a>
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+				<a href="https://www.westlake.edu.cn/" target="_blank">
+                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
+            </div>
+			<nav class="menu-box">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li class="active"><a href="news.html">News</a></li>
+					<li><a href="joinus.html">Join Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" />
+			<div class="banner-content">
+				<h5>News</h5>
+			</div>
+		</section>
+		<main>
+			<div class="itemBlock">
+				<div class="container-box">
+					<h5>Group News</h5>
+					<ul class="article-txt">
+						<li>
+							<div class="dateBox">December 12, 2024</div>
+							<div class="txt">
+								<p>Congratulations to Prof. Tian for being recognized as Rising Stars in Optics 2024 by IOPscience!</p>
+								<img src="./images/home/newsImg_1.png" />
+								<a href="javascript:;">Read More &gt;</a>
+							</div>
+						</li>
+						<li>
+							<div class="dateBox">December 5-6, 2024</div>
+							<div class="txt">
+								<p>Prof. Tian gave talks on “Art of light manipulation based on optical metasurfaces” at Tianjin University, Hebei University of Technology and Nankai University</p>
+								<img src="./images/home/newsImg_2.png" />
+								<a href="javascript:;">Read More &gt;</a>
+							</div>
+						</li>
+						<li>
+							<div class="dateBox">November 11, 2024</div>
+							<div class="txt">
+								<p>Welcome Dr. Jiaju Wu to join us as a visiting scholar! Best wishes on his new journey!</p>
+								<a href="javascript:;">Read More &gt;</a>
+							</div>
+						</li>
+						<li>
+							<div class="dateBox">October 14, 2024</div>
+							<div class="txt">
+								<p>Welcome Dr. Mingke Jin to join us as a postdoctoral fellow! Best wishes on her new journey!</p>
+								<a href="javascript:;">Read More &gt;</a>
+							</div>
+						</li>
+						<li>
+							<div class="dateBox">September 30, 2024</div>
+							<div class="txt">
+								<p>Congratulations to Prof. Tian for being listed as one of the top 2% of scientists worldwide by Stanford University and Elsevier!</p>
+								<img src="./images/home/newsImg_3.png" />
+								<a href="javascript:;">Read More &gt;</a>
+							</div>
+						</li>
+						<li>
+							<div class="dateBox">August 24, 2024</div>
+							<div class="txt">
+								<p>Welcome Jieyu Zheng, Xinyi Zhang, Shuaiyang Wei and Bo Zhao and to join us as the 2024 Ph.D. student! Best wishes on their new journey!</p>
+								<img src="./images/home/newsImg_4.png" />
+								<a href="javascript:;">Read More &gt;</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="logo-box">
+				<img src="./img/icon_footerLogo.png" alt="">
+			</div>
+			<p><span>Address: </span>No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
+			<p>
+				<span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
+				<span>浙公安备33010602007514号</span>
+				<span>Copyright © Westlake University. All Rights Reserved</span>
+			</p>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					width = width >= 1440 ? 1440 : width;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+			})
+			function openPage(url, target) {
+				if (url) {
+					window.open(url, target || '_self')
+				}
+			}
+		</script>
+	</body>
+</html>

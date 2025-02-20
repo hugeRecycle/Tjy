@@ -1,0 +1,41 @@
+.itemBlock h5 {
+    margin-top: .4rem;
+}
+.itemBlock img {
+	width: 3rem;
+	height: 3rem;
+    margin: .36rem auto 0;
+}
+.itemBlock h6 {
+	font-size: .24rem;
+	color: rgba(0, 0, 0, .85);
+	font-family: Avenir-Medium;
+	font-weight: 500;
+	line-height: .34rem;
+    margin-top: .36rem;
+    text-align: center;
+}
+.itemBlock p {
+	font-size: .18rem;
+	color: rgba(0, 0, 0, .65);
+	font-family: Avenir-Roman;
+	line-height: .26rem;
+	margin-top: .2rem;
+}
+.itemBlock p:last-child {
+    text-align: center;
+    color: rgba(0, 0, 0, .45);
+}
+.itemBlock p>img {
+	width: .28rem;
+	height: .28rem;
+    margin-top: 0;
+	margin-right: .12rem;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.itemBlock p>span {
+	text-decoration: underline;
+	font-size: .2rem;
+	color: rgba(0, 0, 0, .85);
+}

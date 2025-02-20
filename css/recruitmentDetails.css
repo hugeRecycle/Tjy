@@ -1,0 +1,37 @@
+.itemBlock .container-box {
+	max-width: 14.4rem;
+	margin: 0 auto;
+	padding: .4rem 1.2rem .52rem;
+}
+.itemBlock .article-container {
+    margin-top: .37rem;
+}
+.itemBlock .article-container h5 {
+    font-size: .26rem;
+	color: rgba(0, 0, 0, .85);
+	line-height: .36rem;
+    text-align: left;
+}
+.itemBlock .article-container ul {
+    margin-top: .28rem;
+    padding-top: .04rem;
+    border-top: .01rem solid rgba(0,0,0,.1);
+}
+.itemBlock .article-container ul li {
+    margin-top: .24rem;
+    color: rgba(0, 0, 0, .85);
+    font-size: .2rem;
+    line-height: .3rem;
+}
+.itemBlock .article-container ul li h6 {
+	font-family: Avenir-Medium;
+	font-weight: 500;
+    font-size: .2rem;
+}
+.itemBlock .article-container ul li p {
+    font-family: Avenir-Roman;
+}
+.itemBlock .article-container ul li p a {
+    color: #2157A8;
+    display: block;
+}

@@ -1,0 +1,65 @@
+.itemBlock {
+    background-color: #FFFFFF;
+}
+.itemBlock:nth-child(2n) {
+    background-color: #F5F5F5;
+}
+.itemBlock ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.itemBlock ul>li {
+    margin-top: .46rem;
+    width: 5.6rem;
+    margin-right: .8rem;
+}
+.itemBlock ul>li:nth-child(2n) {
+    margin-right: 0;
+}
+.itemBlock ul>li img {
+    height: 4.2rem;
+}
+.itemBlock ul>li h6 {
+    font-size: .22rem;
+	color: rgba(0, 0, 0, .85);
+	font-family: Avenir-Heavy;
+    font-weight: 800;
+	line-height: .3rem;
+	margin-top: .28rem;
+    text-align: center;
+}
+.itemBlock2 ul {
+    flex-direction: column;
+}
+.itemBlock2 ul>li {
+    width: 100%;
+    margin: 0;
+    margin-top: .46rem;
+    padding-bottom: .46rem;
+    border-bottom: .01rem dashed rgba(0, 0, 0, .2);
+}
+.itemBlock2 ul>li:last-child {
+    padding-bottom: 0;
+    border-color: transparent;
+}
+.itemBlock2 ul>li h6 {
+    margin-top: 0;
+    text-align: left;
+}
+.itemBlock2 ul>li div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.itemBlock2 ul>li div img {
+    margin-top: .46rem;
+    width: 5.6rem;
+    margin-right: .8rem;
+}
+.itemBlock ul>li div img:nth-child(2n) {
+    margin-right: 0;
+}
+.itemBlock2 ul>li div img:nth-child(1),
+.itemBlock2 ul>li div img:nth-child(2) {
+    margin-top: .28rem;
+}

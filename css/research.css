@@ -1,0 +1,67 @@
+.itemBlock {
+	background-color: #FFFFFF;
+	flex-direction: column;
+}
+.itemBlock:nth-child(2n) {
+	background-color: #F5F5F5;
+}
+.itemBlock h5 {
+	margin-bottom: .32rem;
+}
+.itemBlock .article-img {
+	float: right;
+	width: 5rem;
+}
+.itemBlock:nth-child(2n) .article-img {
+	float: left;
+	width: 5rem;
+}
+.itemBlock .article-txt {
+	float: left;
+	width: 6.64rem;
+	margin-left: 0;
+	margin-right: .36rem;
+}
+.itemBlock:nth-child(2n) .article-txt {
+	float: right;
+	width: 6.64rem;
+	margin-left: .36rem;
+	margin-right: 0;
+}
+.itemBlock .article-txt>h6 {
+	font-size: .24rem;
+	color: rgba(0, 0, 0, .85);
+	font-family: Avenir-Medium;
+	font-weight: 500;
+	line-height: .33rem;
+}
+.itemBlock .article-txt>p {
+	margin-top: .12rem;
+	font-size: .22rem;
+	font-family: Avenir-Roman;
+	line-height: .3rem;
+	color: rgba(0, 0, 0, .65);
+}
+.itemBlock .article-txt>ul {
+	margin-top: .12rem;
+	margin-left: .26rem;
+}
+.itemBlock .article-txt>ul>li {
+	font-size: .22rem;
+	color: rgba(0, 0, 0, .65);
+	font-family: Avenir-Roman;
+	line-height: .3rem;
+	margin-top: .06rem;
+	list-style-type: disc;
+}
+.itemBlock1 {
+	flex-direction: row;
+}
+.itemBlock1 .article-txt>p {
+	margin-top: 0;
+	color: rgba(0, 0, 0, .85);
+}
+.itemBlock1 .article-txt {
+	float: none;
+	width: 100%;
+}

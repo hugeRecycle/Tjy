@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Team</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/personnelInfo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
+		<script src="./js/jquery-2.1.4.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a>
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+				<a href="https://www.westlake.edu.cn/" target="_blank">
+                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
+            </div>
+			<nav class="menu-box">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li class="active"><a href="team.html">Team</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="joinus.html">Join Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" />
+			<div class="banner-content">
+				<h5>Team</h5>
+			</div>
+		</section>
+		<main>
+			<div class="itemBlock">
+				<div class="container-box">
+                    <div class="back-box">
+                        <img src="./img/icon_back.png" />
+                        <a href="./team.html">Back</a>
+                        <span>&gt;</span>
+                        <span>Content</span>
+                    </div>
+                    <h5>Administrative Assistant</h5>
+                    <img src="./images/team/yw.png">
+                    <h6>Wei Yang 杨微</h6>
+                    <p>Wei Yang was born in Zhuji, Zhejiang Province. She joined Jingyi Tian’s group in 2024 as administrative assistant at Westlake University. Before that, she earned her bachelor’s degree in Tianjin Foreign Studies University，and then she received her master’s degree from Zhejiang University of Technology. She has many years of working experience in administrative management and she is now responsible for the all-round administrative duties in Jingyi Tian‘s group. In her spare time, Wei Yang enjoys traveling and listing to the music.</p>
+                    <p><img src="./images/team/icon_email.png">Email: <span>yangwei@westlake.edu.cn</span></p>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="logo-box">
+				<img src="./img/icon_footerLogo.png" alt="">
+			</div>
+			<p><span>Address: </span>No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
+			<p>
+				<span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
+				<span>浙公安备33010602007514号</span>
+				<span>Copyright © Westlake University. All Rights Reserved</span>
+			</p>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					width = width >= 1440 ? 1440 : width;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+			})
+			function openPage(url, target) {
+				if (url) {
+					window.open(url, target || '_self')
+				}
+			}
+		</script>
+	</body>
+</html>

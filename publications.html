@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" id="wixDesktopViewport" />
+		<title>Publications</title>
+		<link rel="shortcut icon" href="./favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./css/common.css" />
+		<link rel="stylesheet" type="text/css" href="./css/publications.css" />
+		<script src="./js/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<header class="header-box">
+			<div class="logo-box">
+                <a>
+                    <img src="./img/icon_headerLogo_l.png" title="西湖大学" />
+                </a>
+				<a href="https://www.westlake.edu.cn/" target="_blank">
+                    <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
+                </a>
+            </div>
+			<nav class="menu-box">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="research.html">Research</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li class="active"><a href="publications.html">Publications</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="joinus.html">Join Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="banner-box">
+			<img src="./images/research/banner.png" />
+			<div class="banner-content">
+				<h5>Publications</h5>
+			</div>
+		</section>
+		<main>
+			<div class="itemBlock">
+				<div class="container-box">
+					<ul class="tab-box" id="tab-box">
+						<li data-type="ALL" class="active">ALL</li>
+						<li data-type="Journal Papers">Journal Papers</li>
+					</ul>
+					<ul class="publications-list" id="publications-list">
+						<li data-type="Journal Papers">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton Polaritons with Spin On-Demand”, Advanced Materials, 2024, 2412952.</li>
+						<li data-type="Journal Papers">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton Polaritons with Spin On-Demand”, Advanced Materials, 2024, 2412952.</li>
+						<li data-type="Journal Papers">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton Polaritons with Spin On-Demand”, Advanced Materials, 2024, 2412952.</li>
+						<li data-type="Journal Papers">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite quantum dot one-dimensional topological laser”, Nature Communications, 2023, 14 (1), 1433. (ESI-Highly-cited paper)</li>
+						<li data-type="Journal Papers">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite quantum dot one-dimensional topological laser”, Nature Communications, 2023, 14 (1), 1433. (ESI-Highly-cited paper)</li>
+						<li data-type="Journal Papers">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite quantum dot one-dimensional topological laser”, Nature Communications, 2023, 14 (1), 1433. (ESI-Highly-cited paper)</li>
+						<li data-type="Patents Licensed">M. Klein#, Y. Wang#, J. Tian, S. T. Ha, R. Paniagua-Domínguez, A. I. Kuznetsov, G. Adamo, C. Soci*, “Polarization-tunable perovskite light-emitting metatransistor”, Advanced Materials, 2022, 35 (1), 2207317.</li>
+						<li data-type="Book Chapters">G. Long#, G. Adamo#, J. Tian, M Klein, H. NS Krishnamoorthy, E. Feltri, H. Wang and C. Soci*, “Perovskite metasurfaces with large superstructural chirality”, Nature Communications, 2022, 13 (1), 1-8. (ESI-Highly-cited paper)</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer-box">
+			<div class="logo-box">
+				<img src="./img/icon_footerLogo.png" alt="">
+			</div>
+			<p><span>Address: </span>No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
+			<p>
+				<span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
+				<span>浙公安备33010602007514号</span>
+				<span>Copyright © Westlake University. All Rights Reserved</span>
+			</p>
+		</footer>
+		<script>
+			$(function(){
+				function setRem(designSize) {
+					let html = document.documentElement;
+					let width = html.clientWidth;
+					width = width >= 1440 ? 1440 : width;
+			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
+				}
+				setRem(14.4);
+				window.onresize = function() {
+					setRem(14.4);
+				};
+				let selectedType;
+				$('#tab-box>li').click(function() {
+					let curSelectedType = $(this).data('type');
+					$('#tab-box>li').each(function() {
+						$(this).removeClass('active');
+					})
+					if (curSelectedType == selectedType) {
+						return
+					} else {
+						$(this).addClass('active');
+					}
+
+					selectedType = curSelectedType;
+					$('#publications-list>li').each(function() {
+						let listType = $(this).data('type');
+						$(this).addClass('hide');
+						if (curSelectedType == 'ALL') {
+							$(this).removeClass('hide');
+						} else {
+							if (curSelectedType == listType) {
+								$(this).removeClass('hide');
+							}
+						}	
+					});
+				})
+				const list = document.getElementById('publications-list');
+				const items = Array.from(list.children);
+				items.reverse();
+				list.innerHTML = '';
+				items.forEach(item => list.appendChild(item)); 
+			})
+			function openPage(url, target) {
+				if (url) {
+					window.open(url, target || '_self')
+				}
+			}
+		</script>
+	</body>
+</html>

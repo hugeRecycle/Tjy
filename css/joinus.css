@@ -1,0 +1,48 @@
+.itemBlock .container-box img {
+	width: .39rem;
+	height: .31rem;
+}
+.itemBlock .container-box img:last-child {
+	margin: .4rem auto 0;
+	width: auto !important;
+	height: auto !important;
+}
+.itemBlock .container-box h6 {
+	font-size: .22rem;
+	color: rgba(0, 0, 0, .85);
+	font-family: Avenir-Medium;
+	font-weight: 500;
+	line-height: .3rem;
+	margin-top: .32rem;
+}
+.itemBlock .container-box ul {
+	padding: .04rem 0;
+}
+.itemBlock .container-box ul li {
+	margin-top: .2rem;
+	font-size: .2rem;
+	color: rgba(0, 0, 0, .85);
+	font-family: Avenir-Medium;
+	font-weight: 500;
+}
+.itemBlock .container-box ul li p {
+	line-height: .28rem;
+}
+.itemBlock .container-box ul li p:nth-child(2) {
+	margin-top: .07rem;
+	color: #2157A8;
+}
+.itemBlock .container-box>p {
+	font-size: .22rem;
+	color: rgba(0, 0, 0, .65);
+	font-family: Avenir-Roman;
+	line-height: .3rem;
+	margin-top: .08rem;
+}
+.itemBlock .container-box ul li p a,
+.itemBlock .container-box>p span {
+	text-decoration: underline;
+	font-family: Avenir-Medium;
+	font-weight: 500;
+	color: rgba(0, 0, 0, .85);
+}
