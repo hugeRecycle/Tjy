@@ -21,13 +21,13 @@
             </div>
 			<nav class="menu-box">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="research.html">Research</a></li>
-					<li><a href="gallery.html">Gallery</a></li>
-					<li><a href="publications.html">Publications</a></li>
-					<li><a href="team.html">Team</a></li>
-					<li><a href="news.html">News</a></li>
-					<li class="active"><a href="joinus.html">Join Us</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="joinus.html">Join Us</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -40,35 +40,51 @@
 		<main>
 			<div class="itemBlock">
 				<div class="container-box">
-					<img src="./images/joinus/icon_label.png">
-					<h6>We are seeking curious minds and Go-getters:</h6>
-					<ul>
-						<li>
-							<p>Ph.D students or research assistants (<a href="./recruitmentDetails1.html">实验室招收25年入学博士生、科研助理</a>);</p>
-							<p>* PhD applicants are requested to complete the formal application process by March 31, 2025.</p>
-						</li>
-						<li>
-							<p>Postdoctoral fellows or visiting scholars (<a href="./recruitmentDetails2.html">实验室招收博士后、访问学者</a>)</p>
-							<p>* Postdoctoral fellows and visiting scholars can start their positions at any time.</p>
-						</li>
-					</ul>
-					<h6>Together, we will illuminate new horizons!</h6>
-					<p>If you are interested, please contact <span>tianjingyi@westlake.edu.cn</span></p>
-					<img src="./images/joinus/img_1.png">
+                    <div class="recruitmentInfo">
+                        <img src="./images/joinus/icon_label.png">
+                        <h6>We are seeking curious minds and Go-getters:</h6>
+                        <ul>
+                            <li>
+                                <p>Ph.D students or research assistants (<a href="./recruitmentDetails1.html">实验室招收25年入学博士生、科研助理</a>);</p>
+                                <p>* PhD applicants are requested to complete the formal application process by March 31, 2025.</p>
+                            </li>
+                            <li>
+                                <p>Postdoctoral fellows or visiting scholars (<a href="./recruitmentDetails2.html">实验室招收博士后、访问学者</a>)</p>
+                                <p>* Postdoctoral fellows and visiting scholars can start their positions at any time.</p>
+                            </li>
+                        </ul>
+                        <h6>Together, we will illuminate new horizons!</h6>
+                        <p>If you are interested, please contact <span>tianjingyi@westlake.edu.cn</span></p>
+                        <img src="./images/joinus/img_1.png">
+                    </div>
+                    <div class="form-box">
+                        <input type="text" placeholder="Name*">
+                        <input type="text" placeholder="Email*">
+                        <input type="text" placeholder="Subject*">
+                        <textarea name="" id="" placeholder="Message*"></textarea>
+                        <button>Submit</button>
+                    </div>
+                    <div class="clean"></div>
 				</div>
 			</div>
 		</main>
-		<footer class="footer-box">
-			<div class="logo-box">
-				<img src="./img/icon_footerLogo.png" alt="">
-			</div>
-			<p><span>Address: </span>No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
-			<p>
-				<span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
-				<span>浙公安备33010602007514号</span>
-				<span>Copyright © Westlake University. All Rights Reserved</span>
-			</p>
-		</footer>
+        <footer class="footer-box">
+            <div class="logo-box">
+                <img src="./img/icon_footerLogo.png" alt="">
+                <img src="./img/icon_footerLogo.png" alt="">
+            </div>
+            <div class="contactUs-box">
+                <p>tianjingyi@westlake.edu.cn</p>
+                <p>Address: No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
+                <a href="./joinus.html">Join us</a>
+            </div>
+            <div class="clean"></div>
+            <div class="filings-box">
+                <span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
+                <span>浙公安备33010602007514号</span>
+                <span>Copyright © Westlake University. All Rights Reserved</span>
+            </div>
+        </footer>
 		<script>
 			$(function(){
 				function setRem(designSize) {
@@ -82,11 +98,6 @@
 					setRem(14.4);
 				};
 			})
-			function openPage(url, target) {
-				if (url) {
-					window.open(url, target || '_self')
-				}
-			}
 		</script>
 	</body>
 </html>

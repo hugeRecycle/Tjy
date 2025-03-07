@@ -1,13 +1,14 @@
 .banner-box {
-	height: 6.4rem;
+	height: 4.8rem;
 }
 .banner-box .banner-content {
 	background: rgba(0, 0, 0, .2)
 }
 .banner-box .banner-content .txt-box {
 	width: 100%;
+    max-width: 14.4rem;
     height: 100%;
-	padding: 1.3rem 1.2rem;
+	padding: .97rem 1.2rem 0;
 }
 .banner-box .banner-content .txt-box h5 {
 	font-family: Avenir-Black;
@@ -16,6 +17,13 @@
 	line-height: .76rem;
 	color: #FFFFFF;
 	margin-top: -0.02rem;
+}
+.banner-box .banner-content .txt-box h5:nth-child(3) {
+    font-size: .48rem;
+    line-height: .71rem;
+}
+.banner-box .banner-content .txt-box h5 span {
+    font-size: .42rem;
 }
 .banner-box .banner-content .txt-box h5::after {
 	display: none;
@@ -30,21 +38,6 @@
 	margin-top: .16rem;
 	border-top: .01rem solid rgba(255, 255, 255, .85);
 	padding-top: .26rem;
-}
-.banner-box .banner-content .txt-box a {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 3.46rem;
-	height: .45rem;
-	font-size: .18rem;
-	color: #FFFFFF;
-	font-family: Avenir-Heavy;
-	font-weight: 800;
-	margin-top: .58rem;
-	border: .015rem solid #FFFFFF;
-	text-decoration: none;
-	border-radius: .51rem;
 }
 /* 内容区 */
 .itemBlock h5 {

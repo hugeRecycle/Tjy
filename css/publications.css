@@ -45,7 +45,9 @@
 	flex: 1;
 	border-left: .01rem solid rgba(0, 0, 0, .1);
 	padding: .32rem .8rem .52rem .4rem;
-	display: flex;
+}
+.itemBlock .publications-list ul {
+    display: flex;
     flex-direction: column-reverse;
 }
 .itemBlock .publications-list li {
@@ -62,4 +64,11 @@
     font-size: .2rem;
     color: rgba(0, 0, 0, .85);
     margin-right: .04rem;
+}
+.itemBlock p {
+    font-family: Avenir-Roman;
+    font-size: .2rem;
+    color: rgba(0, 0, 0, .45);
+    line-height: .27rem;
+    margin-top: .28rem;
 }
