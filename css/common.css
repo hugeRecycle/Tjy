@@ -50,8 +50,8 @@ img {
 /* header */
 .header-box {
 	width: 100%;
-	height: .68rem;
-	padding: 0 .6rem;
+	height: 68px;
+	padding: 0 60px;
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
@@ -66,15 +66,13 @@ img {
 	cursor: pointer;
 }
 .header-box .logo-box img {
-	width: 1.28rem;
-	height: .4rem;
+	width: 128px;
+	height: 40px;
 	display: block;
 	object-fit: cover;
 }
 .header-box .logo-box a:last-child img {
-	/* width: 1.98rem;
-	height: .36rem; */
-	margin-left: .32rem;
+	margin-left: 32px;
 }
 
 .header-box .menu-box {
@@ -92,9 +90,9 @@ img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  	margin-right: .36rem;
+  	margin-right: 36px;
 	cursor: pointer;
-	border-bottom: .03rem solid transparent;
+	border-bottom: 3px solid transparent;
 	position: relative;
 }
 .header-box .menu-box ul li:last-child {
@@ -105,8 +103,8 @@ img {
   	text-decoration: none;
   	font-family: Avenir-Medium;
 	font-weight: 500;
-  	font-size: .18rem;
-	line-height: .25rem;
+  	font-size: 18px;
+	line-height: 25px;
 }
 .header-box .menu-box li.active,
 .header-box .menu-box li:hover {
@@ -119,8 +117,8 @@ img {
 /* footer */
 .footer-box {
 	width: 100%;
-	height: 2.41rem;
-    padding: .4rem 1rem .36rem;
+	height: 241px;
+    padding: 40px 100px 36px;
 	background-color: #08214D;
 	box-sizing: border-box;
 	/* display: flex;
@@ -133,57 +131,57 @@ img {
     float: left;
 }
 .footer-box .logo-box img {
-	width: 2rem;
-	height: .62rem;
+	width: 200px;
+	height: 62px;
 	display: block;
 }
 .footer-box .logo-box img:nth-child(2) {
-    width: 2.2rem;
-    margin-left: .42rem;
+    width: 220px;
+    margin-left: 42px;
 }
 .footer-box .contactUs-box {
-    width: 5.85rem;
+    width: 585px;
     float: right;
 }
 .footer-box .contactUs-box p {
-    font-size: .2rem;
-    line-height: .27rem;
+    font-size: 20px;
+    line-height: 27px;
     font-family: Avenir-Roman;
     color: rgba(255, 255, 255, .85);
-    width: 2.84rem;
+    width: 284px;
 }
 .footer-box .contactUs-box p:first-child {
-    width: 2.41rem;
+    width: 241px;
     float: right;
 }
 .footer-box .contactUs-box a {
-    width: 1.13rem;
-    height: .34rem;
-    line-height: .33rem;
+    width: 113px;
+    height: 34px;
+    line-height: 33px;
     text-align: center;
-    border-radius: .4rem;
+    border-radius: 40px;
     background-color: #fff;
-    font-size: .16rem;
+    font-size: 16px;
     font-family: Avenir-Heavy;
     font-weight: 800;
     text-decoration: none;
     color: #2157A8;
-    margin-top: -0.46rem;
+    margin-top: -46px;
     float: right;
 }
 .footer-box .filings-box {
-    margin-top: .32rem;
-    border-top: .01rem solid rgba(255, 255, 255, .2);
-    padding-top: .32rem;
+    margin-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding-top: 32px;
     font-family: Medium;
     font-weight: 500;
-    font-size: .14rem;
-    line-height: .2rem;
+    font-size: 14px;
+    line-height: 20px;
     text-align: center;
     color: rgba(255, 255, 255, .65);
 }
 .footer-box .filings-box span {
-    margin-right: .1rem;
+    margin-right: 10px;
 }
 .footer-box .filings-box a {
     text-decoration: none;
@@ -194,7 +192,7 @@ img {
 /* banner */
 .banner-box {
 	width: 100%;
-	height: 2.6rem;
+	height: 260px;
 	position: relative;
 }
 .banner-box .banner-content {
@@ -209,8 +207,8 @@ img {
 }
 .banner-box .banner-content h5 {
 	font-family: Avenir-MediumOblique;
-	font-size: .44rem;
-	line-height: .6rem;
+	font-size: 44px;
+	line-height: 60px;
 	color: #FFFFFF;
 	width: fit-content;
 	position: relative;
@@ -235,42 +233,43 @@ main {
 	justify-content: center;
 }
 .itemBlock .container-box {
-	/* max-width: 14.4rem; */
-	width: 14.4rem;
+	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding: .52rem 1.2rem;
+	padding: 60px 40px;
 	position: relative;
 }
 .itemBlock h5 {
-	font-size: .28rem;
+	font-size: 32px;
 	color: #0C3375;
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .38rem;
+	line-height: 44px;
 	text-align: center;
+	margin-bottom: 40px;
 }
 .itemBlock .back-box {
     width: fit-content;
-    height: .25rem;
+    height: 25px;
     display: flex;
     align-items: center;
-    font-size: .18rem;
+    font-size: 18px;
     color: rgba(0,0,0,0.85);
     font-family: Avenir-Medium;
     font-weight: 500;
 }
 .itemBlock .back-box img {
-    width: .2rem;
-    height: .2rem;
-    margin-right: .08rem;
-    margin-top: -0.05rem;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    margin-top: -5px;
 }
 .itemBlock .back-box a {
     text-decoration: none;
     color: rgba(0,0,0,0.65);
 }
 .itemBlock .back-box span:nth-child(3) {
-    margin: 0 .12rem;
+    margin: 0 12px;
     color: rgba(0,0,0,0.65);
 }
 .itemBlock .back-box span:last-child {
@@ -287,4 +286,319 @@ main {
 .swiper-button-prev::after,
 .swiper-button-next::after {
 	display: none
+}
+
+/* 移动端菜单按钮 */
+.menu-toggle {
+    display: none;
+    width: 30px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-toggle span:nth-child(3) {
+    bottom: 0;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 50%;
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    bottom: 50%;
+}
+
+/* 移动端菜单遮罩 */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+/* 卡片样式 */
+.research-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    body.menu-open {
+        overflow: hidden;
+    }
+    
+    .header-box {
+        height: 60px;
+        padding: 0 15px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 999;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .header-box .logo-box {
+        height: 40px;
+    }
+    
+    .header-box .logo-box img {
+        width: 100px;
+        height: 32px;
+    }
+    
+    .header-box .logo-box a:last-child img {
+        margin-left: 15px;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .menu-box {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #1a2b4b;
+        padding: 80px 20px 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+    }
+    
+    .menu-box.active {
+        transform: translateX(0);
+    }
+    
+    .menu-box.active + .menu-overlay {
+        display: block;
+    }
+    
+    .menu-box ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .menu-box ul li {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .menu-box ul li a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .menu-box ul li.active,
+    .menu-box ul li:hover {
+        border-color: transparent;
+    }
+    
+    .menu-box ul li.active a,
+    .menu-box ul li a:hover {
+        color: #fff;
+        opacity: 0.8;
+    }
+    
+    main {
+        margin-top: 60px;
+    }
+    
+    .banner-box {
+        height: 200px;
+    }
+    
+    .banner-box .banner-content {
+        background: rgba(0, 0, 0, 0.4);
+    }
+    
+    .banner-box .banner-content h5 {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 0 20px;
+        text-align: center;
+    }
+    
+    .itemBlock .container-box {
+        width: 100%;
+        padding: 30px 15px;
+    }
+    
+    .itemBlock h5 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .research-card {
+        margin-bottom: 20px;
+    }
+    
+    .research-card img {
+        height: 200px;
+    }
+    
+    .research-card h6 {
+        padding: 15px;
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .research-card p {
+        padding: 0 15px 15px;
+        margin: 0;
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .news-card {
+        padding: 15px;
+    }
+    
+    .news-card .dateBox {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+    
+    .news-card .txt p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    
+    .news-card .txt img {
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+    
+    .news-card .txt a {
+        color: #1a2b4b;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    
+    .footer-box {
+        height: auto;
+        padding: 30px 15px;
+    }
+    
+    .footer-box .logo-box {
+        margin-bottom: 20px;
+    }
+    
+    .footer-box .logo-box img {
+        width: 120px;
+        height: 38px;
+    }
+    
+    .footer-box .logo-box img:nth-child(2) {
+        width: 140px;
+        margin-left: 20px;
+    }
+    
+    .footer-box .contactUs-box {
+        width: 100%;
+    }
+    
+    .footer-box .contactUs-box p {
+        width: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-box .contactUs-box a {
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 14px;
+    }
+    
+    .footer-box .filings-box {
+        margin-top: 20px;
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/* 平板适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        font-size: 16px;
+    }
+    
+    .itemBlock .container-box {
+        width: 100%;
+        padding: 0.4rem;
+    }
+    
+    .header-box .menu-box ul li {
+        margin-right: 0.2rem;
+    }
+    
+    .header-box .menu-box ul li a {
+        font-size: 0.16rem;
+    }
+}
+
+/* 大屏适配 */
+@media screen and (min-width: 1025px) {
+    :root {
+        font-size: 18px;
+    }
 }
