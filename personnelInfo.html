@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
 		<script src="./js/jquery-2.1.4.min.js"></script>
 		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</head>
 	<body>
 		<header class="header-box">
@@ -21,6 +22,11 @@
                     <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
                 </a>
             </div>
+			<div class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 			<nav class="menu-box">
 				<ul>
                     <li><a href="index.html">Home</a></li>
@@ -77,19 +83,6 @@
                 <span>Copyright © Westlake University. All Rights Reserved</span>
             </div>
         </footer>
-		<script>
-			$(function(){
-				function setRem(designSize) {
-					let html = document.documentElement;
-					let width = html.clientWidth;
-					width = width >= 1440 ? 1440 : width;
-			     	html.style.fontSize = width / designSize + 'px'; // 设计稿宽度为1440px，那么1rem=100px，故除以14.4
-				}
-				setRem(14.4);
-				window.onresize = function() {
-					setRem(14.4);
-				};
-			})
 		</script>
 	</body>
 </html>

@@ -1,51 +1,54 @@
 .itemBlock .container-box {
-    padding: .52rem .4rem .52rem 1.2rem;
+    padding: 52px 40px 52px 120px;
 }
 .itemBlock .container-box .recruitmentInfo {
-    width: calc(100% - 4.24rem);
-    margin-right: .6rem;
+    width: calc(100% - 424px);
+    margin-right: 60px;
     float: left;
 }
 .itemBlock .container-box .recruitmentInfo img {
-	width: .39rem;
-	height: .31rem;
+	width: 39px;
+	height: 31px;
 }
 .itemBlock .container-box .recruitmentInfo img:last-child {
-	margin: .4rem auto 0;
+	margin: 40px auto 0;
 	width: auto !important;
 	height: auto !important;
+	display: block;
+	max-width: 100%;
+	border-radius: 8px;
 }
 .itemBlock .container-box .recruitmentInfo h6 {
-	font-size: .22rem;
+	font-size: 22px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .3rem;
-	margin-top: .32rem;
+	line-height: 30px;
+	margin-top: 32px;
 }
 .itemBlock .container-box .recruitmentInfo ul {
-	padding: .04rem 0;
+	padding: 4px 0;
 }
 .itemBlock .container-box .recruitmentInfo ul li {
-	margin-top: .2rem;
-	font-size: .2rem;
+	margin-top: 20px;
+	font-size: 20px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
 }
 .itemBlock .container-box .recruitmentInfo ul li p {
-	line-height: .28rem;
+	line-height: 28px;
 }
 .itemBlock .container-box .recruitmentInfo ul li p:nth-child(2) {
-	margin-top: .07rem;
+	margin-top: 7px;
 	color: #2157A8;
 }
 .itemBlock .container-box .recruitmentInfo>p {
-	font-size: .22rem;
+	font-size: 22px;
 	color: rgba(0, 0, 0, .65);
 	font-family: Avenir-Roman;
-	line-height: .3rem;
-	margin-top: .08rem;
+	line-height: 30px;
+	margin-top: 8px;
 }
 .itemBlock .container-box .recruitmentInfo ul li p a,
 .itemBlock .container-box .recruitmentInfo>p span {
@@ -55,41 +58,155 @@
 	color: rgba(0, 0, 0, .85);
 }
 .itemBlock .container-box .form-box {
-    width: 3.64rem;
+    width: 364px;
     background-color: #F5F5F5;
-    padding: .32rem .26rem;
+    padding: 32px 26px;
     float: right;
+    border-radius: 8px;
 }
 .itemBlock .container-box .form-box input,
 .itemBlock .container-box .form-box textarea {
-    width: 3.12rem;
-    height: .4rem;
+    width: 312px;
+    height: 40px;
     display: block;
-    padding: .08rem .16rem;
+    padding: 8px 16px;
     background-color: #FFFFFF;
     box-sizing: border-box;
-    margin-bottom: .16rem;
-    font-size: .18rem;
+    margin-bottom: 16px;
+    font-size: 18px;
     font-family: Avenir-Roman;
-    border: .01rem solid #CED4DA;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
 }
 .itemBlock .container-box .form-box textarea {
-    height: 2.6rem;
+    height: 260px;
     resize: none;
 }
 .itemBlock .container-box .form-box button {
-    width: 1.52rem;
-    height: .4rem;
-    line-height: .4rem;
+    width: 152px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     background-color: #2157A8;
     color: #fff;
-    margin-top: .06rem;
-    font-size: .18rem;
+    margin-top: 6px;
+    font-size: 18px;
     font-family: Avenir-Medium;
     border: none;
     cursor: pointer;
     padding: 0;
     display: block;
     float: right;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.itemBlock .container-box .form-box button:hover {
+    background-color: #1a4a96;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock .container-box {
+        padding: 30px 15px;
+        flex-direction: column;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        margin-bottom: 30px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo img {
+        width: 30px;
+        height: 24px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo img:last-child {
+        margin: 20px auto 0;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo h6 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 20px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo ul li {
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo ul li p {
+        line-height: 24px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo ul li p:nth-child(2) {
+        margin-top: 5px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo>p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    
+    .itemBlock .container-box .form-box {
+        width: 100%;
+        float: none;
+        padding: 20px;
+    }
+    
+    .itemBlock .container-box .form-box input,
+    .itemBlock .container-box .form-box textarea {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .itemBlock .container-box .form-box textarea {
+        height: 200px;
+    }
+    
+    .itemBlock .container-box .form-box button {
+        width: 120px;
+        font-size: 16px;
+    }
+}
+
+/* 平板适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .itemBlock .container-box {
+        padding: 40px 30px 40px 80px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo {
+        width: calc(100% - 350px);
+        margin-right: 40px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo h6 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo ul li {
+        font-size: 18px;
+    }
+    
+    .itemBlock .container-box .recruitmentInfo>p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .itemBlock .container-box .form-box {
+        width: 300px;
+        padding: 25px 20px;
+    }
+    
+    .itemBlock .container-box .form-box input,
+    .itemBlock .container-box .form-box textarea {
+        width: 260px;
+    }
 }

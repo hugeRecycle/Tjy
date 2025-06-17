@@ -1,37 +1,101 @@
 .itemBlock .container-box {
-	max-width: 14.4rem;
+	max-width: 1440px;
 	margin: 0 auto;
-	padding: .4rem 1.2rem .52rem;
+	padding: 40px 120px 52px;
 }
 .itemBlock .article-container {
-    margin-top: .37rem;
+    margin-top: 37px;
 }
 .itemBlock .article-container h5 {
-    font-size: .26rem;
+    font-size: 26px;
 	color: rgba(0, 0, 0, .85);
-	line-height: .36rem;
+	line-height: 36px;
     text-align: left;
 }
 .itemBlock .article-container ul {
-    margin-top: .28rem;
-    padding-top: .04rem;
-    border-top: .01rem solid rgba(0,0,0,.1);
+    margin-top: 28px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
 .itemBlock .article-container ul li {
-    margin-top: .24rem;
+    margin-top: 24px;
     color: rgba(0, 0, 0, .85);
-    font-size: .2rem;
-    line-height: .3rem;
+    font-size: 20px;
+    line-height: 30px;
 }
 .itemBlock .article-container ul li h6 {
 	font-family: Avenir-Medium;
 	font-weight: 500;
-    font-size: .2rem;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 .itemBlock .article-container ul li p {
     font-family: Avenir-Roman;
+    margin-bottom: 8px;
 }
 .itemBlock .article-container ul li p a {
     color: #2157A8;
-    display: block;
+    display: inline;
+    text-decoration: underline;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock .container-box {
+        padding: 20px 15px 30px;
+    }
+    
+    .itemBlock .article-container {
+        margin-top: 20px;
+    }
+    
+    .itemBlock .article-container h5 {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .itemBlock .article-container ul {
+        margin-top: 20px;
+        padding-top: 15px;
+    }
+    
+    .itemBlock .article-container ul li {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .itemBlock .article-container ul li h6 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #2157A8;
+    }
+    
+    .itemBlock .article-container ul li p {
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+}
+
+/* 平板适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .itemBlock .container-box {
+        padding: 30px 60px 40px;
+    }
+    
+    .itemBlock .article-container h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .itemBlock .article-container ul li {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .itemBlock .article-container ul li h6 {
+        font-size: 18px;
+    }
 }

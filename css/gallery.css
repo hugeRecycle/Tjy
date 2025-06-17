@@ -10,23 +10,26 @@
     flex-wrap: wrap;
 }
 .itemBlock ul>li {
-    margin-top: .46rem;
-    width: 5.6rem;
-    margin-right: .8rem;
+    margin-top: 46px;
+    width: 560px;
+    margin-right: 80px;
 }
 .itemBlock ul>li:nth-child(2n) {
     margin-right: 0;
 }
 .itemBlock ul>li img {
-    height: 4.2rem;
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
 .itemBlock ul>li h6 {
-    font-size: .22rem;
+    font-size: 22px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Heavy;
     font-weight: 800;
-	line-height: .3rem;
-	margin-top: .28rem;
+	line-height: 30px;
+	margin-top: 28px;
     text-align: center;
 }
 
@@ -36,9 +39,9 @@
 .itemBlock2 ul>li {
     width: 100%;
     margin: 0;
-    margin-top: .46rem;
-    padding-bottom: .46rem;
-    border-bottom: .01rem dashed rgba(0, 0, 0, .2);
+    margin-top: 46px;
+    padding-bottom: 46px;
+    border-bottom: 1px dashed rgba(0, 0, 0, .2);
 }
 .itemBlock2 ul>li:last-child {
     padding-bottom: 0;
@@ -53,14 +56,80 @@
     flex-wrap: wrap;
 }
 .itemBlock2 ul>li div img {
-    margin-top: .46rem;
-    width: 5.6rem;
-    margin-right: .8rem;
+    margin-top: 46px;
+    width: 560px;
+    margin-right: 80px;
+    border-radius: 8px;
 }
 .itemBlock ul>li div img:nth-child(2n) {
     margin-right: 0;
 }
 .itemBlock2 ul>li div img:nth-child(1),
 .itemBlock2 ul>li div img:nth-child(2) {
-    margin-top: .28rem;
+    margin-top: 28px;
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .itemBlock ul>li {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    
+    .itemBlock ul>li:first-child {
+        margin-top: 0;
+    }
+    
+    .itemBlock ul>li img {
+        height: 250px;
+        border-radius: 8px;
+    }
+    
+    .itemBlock ul>li h6 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .itemBlock2 ul>li {
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .itemBlock2 ul>li h6 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    
+    .itemBlock2 ul>li div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .itemBlock2 ul>li div img {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+    
+    .itemBlock2 ul>li div img:nth-child(1),
+    .itemBlock2 ul>li div img:nth-child(2) {
+        margin-top: 20px;
+    }
+    
+    .itemBlock2 ul>li div img:first-child {
+        margin-top: 0;
+    }
+}
+
+/* 平板适配 */

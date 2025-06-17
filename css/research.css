@@ -6,52 +6,52 @@
 	background-color: #F5F5F5;
 }
 .itemBlock h5 {
-	margin-bottom: .32rem;
+	margin-bottom: 32px;
 }
 .itemBlock .article-img {
 	float: right;
-	width: 5rem;
+	width: 500px;
 }
 .itemBlock:nth-child(2n) .article-img {
 	float: left;
-	width: 5rem;
+	width: 500px;
 }
 .itemBlock .article-txt {
 	float: left;
-	width: 6.64rem;
+	width: 664px;
 	margin-left: 0;
-	margin-right: .36rem;
+	margin-right: 36px;
 }
 .itemBlock:nth-child(2n) .article-txt {
 	float: right;
-	width: 6.64rem;
-	margin-left: .36rem;
+	width: 664px;
+	margin-left: 36px;
 	margin-right: 0;
 }
 .itemBlock .article-txt>h6 {
-	font-size: .24rem;
+	font-size: 24px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .33rem;
+	line-height: 33px;
 }
 .itemBlock .article-txt>p {
-	margin-top: .12rem;
-	font-size: .22rem;
+	margin-top: 12px;
+	font-size: 22px;
 	font-family: Avenir-Roman;
-	line-height: .3rem;
+	line-height: 30px;
 	color: rgba(0, 0, 0, .65);
 }
 .itemBlock .article-txt>ul {
-	margin-top: .12rem;
-	margin-left: .26rem;
+	margin-top: 12px;
+	margin-left: 26px;
 }
 .itemBlock .article-txt>ul>li {
-	font-size: .22rem;
+	font-size: 22px;
 	color: rgba(0, 0, 0, .65);
 	font-family: Avenir-Roman;
-	line-height: .3rem;
-	margin-top: .06rem;
+	line-height: 30px;
+	margin-top: 6px;
 	list-style-type: disc;
 }
 .itemBlock1 {
@@ -64,4 +64,95 @@
 .itemBlock1 .article-txt {
 	float: none;
 	width: 100%;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock {
+        padding: 30px 0;
+    }
+    
+    .itemBlock h5 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .itemBlock .article-img,
+    .itemBlock:nth-child(2n) .article-img {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .itemBlock .article-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .itemBlock .article-txt,
+    .itemBlock:nth-child(2n) .article-txt {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .itemBlock .article-txt>h6 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .itemBlock .article-txt>p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+    
+    .itemBlock .article-txt>ul {
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    
+    .itemBlock .article-txt>ul>li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 8px;
+    }
+    
+    .itemBlock1 .article-txt>p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* 平板适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .itemBlock .article-img,
+    .itemBlock:nth-child(2n) .article-img {
+        width: 400px;
+    }
+    
+    .itemBlock .article-txt,
+    .itemBlock:nth-child(2n) .article-txt {
+        width: 500px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .itemBlock .article-txt>h6 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .itemBlock .article-txt>p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .itemBlock .article-txt>ul>li {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }

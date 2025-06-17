@@ -1,18 +1,18 @@
 .itemBlock .container-box {
-	padding: 0 .4rem;
+	padding: 0 40px;
 	display: flex;
 }
 .itemBlock .tab-box {
-	padding-top: .32rem;
+	padding-top: 32px;
 }
 .itemBlock .tab-box li {
-	min-width: 2rem;
-	height: .66rem;
-	font-size: .2rem;
+	min-width: 200px;
+	height: 66px;
+	font-size: 20px;
 	font-family: Avenir-Medium;
 	font-weight: 500;
 	color: rgba(0, 0, 0, .65);
-	border-bottom: .01rem solid rgba(0, 0, 0, .1);
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
 	cursor: pointer;
 	display: flex;
 	align-items: center;
@@ -27,7 +27,7 @@
 	font-weight: 800;
 }
 .itemBlock .tab-box li.active {
-	padding-left: .12rem;
+	padding-left: 12px;
 	position: relative;
 }
 .itemBlock .tab-box li.active::before {
@@ -36,39 +36,122 @@
 	top: 45%;
 	transform: translateY(-45%);
 	content:"";
-	width: .02rem;
-	height: .27rem;
+	width: 2px;
+	height: 27px;
 	background-color: #E89725;
 }
 
 .itemBlock .publications-list {
 	flex: 1;
-	border-left: .01rem solid rgba(0, 0, 0, .1);
-	padding: .32rem .8rem .52rem .4rem;
+	border-left: 1px solid rgba(0, 0, 0, .1);
+	padding: 32px 80px 52px 40px;
 }
 .itemBlock .publications-list ul {
     display: flex;
     flex-direction: column-reverse;
 }
 .itemBlock .publications-list li {
-	font-size: .2rem;
+	font-size: 20px;
 	font-family: Avenir-Roman;
 	color: rgba(0, 0, 0, .65);
-	padding-top: .2rem;
+	padding-top: 20px;
 	counter-increment: number;
 }
 .itemBlock .publications-list li::before {
     font-family: Avenir-Medium;
     font-weight: 500;
     content: counter(number)".";
-    font-size: .2rem;
+    font-size: 20px;
     color: rgba(0, 0, 0, .85);
-    margin-right: .04rem;
+    margin-right: 4px;
 }
 .itemBlock p {
     font-family: Avenir-Roman;
-    font-size: .2rem;
+    font-size: 20px;
     color: rgba(0, 0, 0, .45);
-    line-height: .27rem;
-    margin-top: .28rem;
+    line-height: 27px;
+    margin-top: 28px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock .container-box {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+    
+    .itemBlock .tab-box {
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .itemBlock .tab-box li {
+        min-width: 120px;
+        height: 50px;
+        font-size: 16px;
+        margin-right: 15px;
+        border-bottom: 2px solid rgba(0, 0, 0, .1);
+        border-radius: 4px 4px 0 0;
+    }
+    
+    .itemBlock .tab-box li.active {
+        padding-left: 8px;
+    }
+    
+    .itemBlock .tab-box li.active::before {
+        width: 3px;
+        height: 20px;
+    }
+    
+    .itemBlock .publications-list {
+        border-left: none;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        padding: 20px 0;
+    }
+    
+    .itemBlock .publications-list li {
+        font-size: 16px;
+        padding-top: 15px;
+        line-height: 24px;
+    }
+    
+    .itemBlock .publications-list li::before {
+        font-size: 16px;
+    }
+    
+    .itemBlock p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 15px;
+    }
+}
+
+/* 平板适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .itemBlock .container-box {
+        padding: 0 30px;
+    }
+    
+    .itemBlock .tab-box li {
+        min-width: 180px;
+        height: 60px;
+        font-size: 18px;
+    }
+    
+    .itemBlock .publications-list {
+        padding: 30px 60px 40px 30px;
+    }
+    
+    .itemBlock .publications-list li {
+        font-size: 18px;
+    }
+    
+    .itemBlock .publications-list li::before {
+        font-size: 18px;
+    }
+    
+    .itemBlock p {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }

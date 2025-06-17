@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/swiper-bundle.min.css">
 		<script src="./js/jquery-2.1.4.min.js"></script>
 		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</head>
 	<body>
 		<header class="header-box">
@@ -27,7 +28,6 @@
 				<span></span>
 			</div>
 			<nav class="menu-box">
-				<div class="menu-overlay"></div>
 				<ul>
 					<li class="active"><a href="index.html">Home</a></li>
                     <li><a href="news.html">News</a></li>
@@ -198,27 +198,6 @@
 						el: ".swiper-pagination",
 						clickable: true
 					}
-				});
-				
-				// 移动端菜单交互
-				$('.menu-toggle').click(function() {
-					$(this).toggleClass('active');
-					$('.menu-box').toggleClass('active');
-					$('body').toggleClass('menu-open');
-				});
-				
-				// 点击菜单项关闭菜单
-				$('.menu-box a').click(function() {
-					$('.menu-toggle').removeClass('active');
-					$('.menu-box').removeClass('active');
-					$('body').removeClass('menu-open');
-				});
-				
-				// 点击遮罩层关闭菜单
-				$('.menu-overlay').click(function() {
-					$('.menu-toggle').removeClass('active');
-					$('.menu-box').removeClass('active');
-					$('body').removeClass('menu-open');
 				});
 			})
 		</script>

@@ -1,41 +1,110 @@
 .itemBlock h5 {
-    margin-top: .4rem;
+    margin-top: 40px;
 }
 .itemBlock img {
-	width: 3rem;
-	height: 3rem;
-    margin: .36rem auto 0;
+	width: 300px;
+	height: 300px;
+    margin: 36px auto 0;
+    display: block;
+    border-radius: 50%;
 }
 .itemBlock h6 {
-	font-size: .24rem;
+	font-size: 24px;
 	color: rgba(0, 0, 0, .85);
 	font-family: Avenir-Medium;
 	font-weight: 500;
-	line-height: .34rem;
-    margin-top: .36rem;
+	line-height: 34px;
+    margin-top: 36px;
     text-align: center;
 }
 .itemBlock p {
-	font-size: .18rem;
+	font-size: 18px;
 	color: rgba(0, 0, 0, .65);
 	font-family: Avenir-Roman;
-	line-height: .26rem;
-	margin-top: .2rem;
+	line-height: 26px;
+	margin-top: 20px;
 }
 .itemBlock p:last-child {
     text-align: center;
     color: rgba(0, 0, 0, .45);
 }
 .itemBlock p>img {
-	width: .28rem;
-	height: .28rem;
+	width: 28px;
+	height: 28px;
     margin-top: 0;
-	margin-right: .12rem;
+	margin-right: 12px;
 	display: inline-block;
 	vertical-align: bottom;
 }
 .itemBlock p>span {
 	text-decoration: underline;
-	font-size: .2rem;
+	font-size: 20px;
 	color: rgba(0, 0, 0, .85);
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock h5 {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+    
+    .itemBlock img {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 0;
+    }
+    
+    .itemBlock h6 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+    
+    .itemBlock p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 15px;
+        text-align: left;
+        padding: 0 15px;
+    }
+    
+    .itemBlock p:last-child {
+        text-align: center;
+        padding: 0;
+    }
+    
+    .itemBlock p>img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    
+    .itemBlock p>span {
+        font-size: 16px;
+    }
+}
+
+/* 平板适配 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .itemBlock img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .itemBlock h6 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    
+    .itemBlock p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    .itemBlock p>span {
+        font-size: 18px;
+    }
 }
