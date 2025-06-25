@@ -20,11 +20,6 @@
                     <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
                 </a>
             </div>
-			<div class="menu-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 			<nav class="menu-box">
 				<ul>
                     <li><a href="index.html">Home</a></li>
@@ -36,6 +31,12 @@
                     <li class="active"><a href="joinus.html">Join Us</a></li>
 				</ul>
 			</nav>
+			<!-- 移动端菜单按钮 -->
+			<button class="mobile-menu-toggle" id="mobileMenuToggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</header>
 		<section class="banner-box">
 			<img src="./images/research/banner.png" />
@@ -102,22 +103,25 @@
 			</div>
 		</main>
         <footer class="footer-box">
-            <div class="logo-box">
-                <img src="./img/icon_footerLogo.png" alt="">
-                <img src="./img/icon_footerLogo.png" alt="">
-            </div>
-            <div class="contactUs-box">
-                <p>tianjingyi@westlake.edu.cn</p>
-                <p>Address: No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
-                <a href="./joinus.html">Join us</a>
-            </div>
-            <div class="clean"></div>
+			<div>
+				<div class="logo-box">
+					<img src="./img/icon_footerLogo.png" alt="">
+					<img src="./img/icon_footerLogo.png" alt="">
+				</div>
+				<div class="contactUs-box">
+					<p>Address: No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
+					<div>
+						<p>tianjingyi@westlake.edu.cn</p>
+						<a href="./joinus.html">Join us</a>
+					</div>
+				</div>
+			</div>
             <div class="filings-box">
                 <span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
                 <span>浙公安备33010602007514号</span>
                 <span>Copyright © Westlake University. All Rights Reserved</span>
             </div>
-        </footer>
+		</footer>
 		<script>
 			function openPage(url, target) {
 				if (url) {

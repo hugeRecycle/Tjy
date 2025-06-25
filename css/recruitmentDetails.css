@@ -1,5 +1,5 @@
 .itemBlock .container-box {
-	max-width: 1440px;
+	max-width: 1280px;
 	margin: 0 auto;
 	padding: 40px 120px 52px;
 }
@@ -35,8 +35,9 @@
 }
 .itemBlock .article-container ul li p a {
     color: #2157A8;
-    display: inline;
+    display: block;
     text-decoration: underline;
+    word-break: break-all;
 }
 
 /* 移动端适配 */

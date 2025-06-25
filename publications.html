@@ -20,11 +20,6 @@
                     <img src="./img/icon_headerLogo_r.png" title="西湖大学" />
                 </a>
             </div>
-			<div class="menu-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 			<nav class="menu-box">
 				<ul>
                     <li><a href="index.html">Home</a></li>
@@ -36,6 +31,12 @@
                     <li><a href="joinus.html">Join Us</a></li>
 				</ul>
 			</nav>
+			<!-- 移动端菜单按钮 -->
+			<button class="mobile-menu-toggle" id="mobileMenuToggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
 		</header>
 		<section class="banner-box">
 			<img src="./images/research/banner.png" />
@@ -46,88 +47,148 @@
 		<main>
 			<div class="itemBlock">
 				<div class="container-box">
-					<ul class="tab-box" id="tab-box">
-						<li data-type="ALL" class="active">ALL</li>
-						<li data-type="Journal Papers">Journal Papers</li>
-					</ul>
+					<ul class="tab-box" id="tab-box"></ul>
                     <div class="publications-list">
-                        <ul id="publications-list">
-                            <li data-type="Journal Papers">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton
+                        <ul id="list-box">
+                            <li data-category="Journal Papers" data-group="2024">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton
                                 Polaritons with Spin On-Demand”, Advanced Materials, 2024, 2412952.</li>
-                            <li data-type="Journal Papers">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton
+                            <li data-category="Journal Papers" data-group="2023">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton
                                 Polaritons with Spin On-Demand”, Advanced Materials, 2024, 2412952.</li>
-                            <li data-type="Journal Papers">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton
+                            <li data-category="Journal Papers" data-group="2024">Y. Wang, G. Adamo, S. T. Ha, J. Tian, and C. Soci*, “Electrically Generated Exciton
                                 Polaritons with Spin On-Demand”, Advanced Materials, 2024, 2412952.</li>
-                            <li data-type="Journal Papers">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite
+                            <li data-category="Journal Papers" data-group="2023">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite
                                 quantum dot one-dimensional topological laser”, Nature Communications, 2023, 14 (1), 1433. (ESI-Highly-cited
                                 paper)</li>
-                            <li data-type="Journal Papers">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite
+                            <li data-category="Journal Papers" data-group="2023">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite
                                 quantum dot one-dimensional topological laser”, Nature Communications, 2023, 14 (1), 1433. (ESI-Highly-cited
                                 paper)</li>
-                            <li data-type="Journal Papers">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite
+                            <li data-category="Journal Papers" data-group="2023">J. Tian*, #, Q. Y. Tan#, Y. Wang, Y. Yang, G. Yuan, G. Adamo, C. Soci*, “Perovskite
                                 quantum dot one-dimensional topological laser”, Nature Communications, 2023, 14 (1), 1433. (ESI-Highly-cited
                                 paper)</li>
-                            <li data-type="Patents Licensed">M. Klein#, Y. Wang#, J. Tian, S. T. Ha, R. Paniagua-Domínguez, A. I. Kuznetsov, G.
+                            <li data-category="Patents Licensed" data-group="2022">M. Klein#, Y. Wang#, J. Tian, S. T. Ha, R. Paniagua-Domínguez, A. I. Kuznetsov, G.
                                 Adamo, C. Soci*, “Polarization-tunable perovskite light-emitting metatransistor”, Advanced Materials, 2022, 35
                                 (1), 2207317.</li>
-                            <li data-type="Book Chapters">G. Long#, G. Adamo#, J. Tian, M Klein, H. NS Krishnamoorthy, E. Feltri, H. Wang and C.
+                            <li data-category="Book Chapters" data-group="2022">G. Long#, G. Adamo#, J. Tian, M Klein, H. NS Krishnamoorthy, E. Feltri, H. Wang and C.
                                 Soci*, “Perovskite metasurfaces with large superstructural chirality”, Nature Communications, 2022, 13 (1), 1-8.
                                 (ESI-Highly-cited paper)</li>
                         </ul>
+						<div id="showList-box" class="showList-box"></div>
                         <p>“#Equal contribution, *Corresponding author”</p>
                     </div>
 				</div>
 			</div>
 		</main>
         <footer class="footer-box">
-            <div class="logo-box">
-                <img src="./img/icon_footerLogo.png" alt="">
-                <img src="./img/icon_footerLogo.png" alt="">
-            </div>
-            <div class="contactUs-box">
-                <p>tianjingyi@westlake.edu.cn</p>
-                <p>Address: No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
-                <a href="./joinus.html">Join us</a>
-            </div>
-            <div class="clean"></div>
+			<div>
+				<div class="logo-box">
+					<img src="./img/icon_footerLogo.png" alt="">
+					<img src="./img/icon_footerLogo.png" alt="">
+				</div>
+				<div class="contactUs-box">
+					<p>Address: No. 600 Dunyu Road, Xihu District, Hangzhou, Zhejiang, 310030, P.R. China</p>
+					<div>
+						<p>tianjingyi@westlake.edu.cn</p>
+						<a href="./joinus.html">Join us</a>
+					</div>
+				</div>
+			</div>
             <div class="filings-box">
                 <span><a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备18025489号</a></span>
                 <span>浙公安备33010602007514号</span>
                 <span>Copyright © Westlake University. All Rights Reserved</span>
             </div>
-        </footer>
+		</footer>
 		<script>
 			$(function(){
-				let selectedType;
-				$('#tab-box>li').click(function() {
-					let curSelectedType = $(this).data('type');
-					$('#tab-box>li').each(function() {
-						$(this).removeClass('active');
-					})
-					if (curSelectedType == selectedType) {
-						return
-					} else {
-						$(this).addClass('active');
+				let currentCategory = '',
+					categoryArr = ['ALL'],
+					showList = [];
+				$('#list-box>li').each(function() {
+					if ($(this).data('category')) {
+						categoryArr.push($(this).data('category')+'')
 					}
-
-					selectedType = curSelectedType;
-					$('#publications-list li').each(function() {
-						let listType = $(this).data('type');
+				});
+				createLiElement(categoryArr, 'tab-box', 'data-category')
+				function createLiElement(arr, ulId, type) {
+					let list = Array.from(new Set(arr));
+					let ul = document.getElementById(ulId);
+					list.forEach((item, index) => {
+						let li = document.createElement('li');
+						li.textContent = item;
+						li.setAttribute(type, item)
+						if (index == 0) {
+							li.classList.add('active')
+							currentCategory = 'ALL'
+						}
+						ul.appendChild(li);
+					})
+				}
+				const listItems = Array.from(document.querySelectorAll('#list-box>li[data-group]'));
+				const displayedValues = new Set();
+				listItems.sort((a, b) => {
+				const valA = parseFloat(a.dataset.group);
+				const valB = parseFloat(b.dataset.group);
+					return valB - valA;
+				});
+				const container = document.querySelector('.showList-box');
+				container.innerHTML = '';
+				let outerDiv, ul;
+				listItems.forEach(item => {
+					const value = item.dataset.group;
+					if (!displayedValues.has(value)) {
+						outerDiv = document.createElement('div');
+						ul = document.createElement('ul');
+						const title = document.createElement('div');
+						title.className = 'date';
+						title.textContent = `${value}`;
+						outerDiv.appendChild(title);
+						ul.appendChild(item);
+						displayedValues.add(value);
+					} else {
+						ul.appendChild(item);
+					}
+					outerDiv.appendChild(ul);
+            		container.appendChild(outerDiv);
+				});
+				
+				$('#list-box').remove();
+				$('#tab-box>li').click(function() {
+					currentCategory = $(this).data('category') || '';
+					if ($(this).hasClass('active')) {
+						return;
+					} else {
+						$('#tab-box>li').each(function() {
+							$(this).removeClass('active');
+						})
+						$(this).addClass('active');
+						setList();
+					}
+				})
+				function setList () {
+					$('#showList-box li').each(function() {
 						$(this).addClass('hide');
-						if (curSelectedType == 'ALL') {
+						let category = $(this).data('category') || '';
+						if (currentCategory == 'ALL') {
 							$(this).removeClass('hide');
 						} else {
-							if (curSelectedType == listType) {
+							if (currentCategory == category) {
 								$(this).removeClass('hide');
 							}
 						}
 					});
-				})
-				const list = document.getElementById('publications-list');
-				const items = Array.from(list.children);
-				items.reverse();
-				list.innerHTML = '';
-				items.forEach(item => list.appendChild(item));
+					$('#showList-box ul').each(function() {
+						const $ul = $(this);
+						$ul.parent().show();
+					});
+					$('#showList-box ul').each(function() {
+						const $ul = $(this);
+						const hiddenLis = $ul.find('li.hide').length;
+						const totalLis = $ul.find('li').length;
+						if(hiddenLis === totalLis && totalLis > 0) {
+							$ul.parent().hide(); // 隐藏祖父元素
+						}
+					});
+				}
 			})
 		</script>
 	</body>

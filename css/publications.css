@@ -50,14 +50,14 @@
     display: flex;
     flex-direction: column-reverse;
 }
-.itemBlock .publications-list li {
+.itemBlock .showList-box li {
 	font-size: 20px;
 	font-family: Avenir-Roman;
 	color: rgba(0, 0, 0, .65);
 	padding-top: 20px;
 	counter-increment: number;
 }
-.itemBlock .publications-list li::before {
+.itemBlock .showList-box li li::before {
     font-family: Avenir-Medium;
     font-weight: 500;
     content: counter(number)".";
@@ -72,6 +72,13 @@
     line-height: 27px;
     margin-top: 28px;
 }
+.date {
+	font-family: Avenir-Medium;
+	font-weight: 500;
+    font-size: 26px;
+    color: rgba(0, 0, 0, .85);
+    margin-top: 20px;
+}
 
 /* 移动端适配 */
 @media screen and (max-width: 768px) {
@@ -82,7 +89,6 @@
     
     .itemBlock .tab-box {
         padding-top: 20px;
-        margin-bottom: 20px;
     }
     
     .itemBlock .tab-box li {
@@ -124,6 +130,11 @@
         line-height: 20px;
         margin-top: 15px;
     }
+
+    .date {
+        font-size: 20px;
+        margin-top: 10px;
+    }
 }
 
 /* 平板适配 */
@@ -153,5 +164,10 @@
     .itemBlock p {
         font-size: 18px;
         line-height: 25px;
+    }
+
+    .date {
+        font-size: 24px;
+        margin-top: 18px;
     }
 }

@@ -1,34 +1,47 @@
-/**
- * 移动端汉堡菜单功能
- * 适用于所有页面的移动端导航菜单交互
- */
-$(function(){
-    // 移动端菜单交互
-    $('.menu-toggle').click(function(e) {
-        e.stopPropagation();
-        $(this).toggleClass('active');
-        $('.menu-box').toggleClass('active');
-        $('body').toggleClass('menu-open');
-    });
+// 移动端菜单控制
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const menuBox = document.querySelector('.header-box .menu-box');
     
-    // 点击菜单项关闭菜单
-    $('.menu-box a').click(function() {
-        $('.menu-toggle').removeClass('active');
-        $('.menu-box').removeClass('active');
-        $('body').removeClass('menu-open');
-    });
+    if (!mobileMenuToggle || !menuBox) {
+        return; // 如果元素不存在，直接返回
+    }
     
-    // 点击页面其他区域关闭菜单
-    $(document).click(function(e) {
-        if (!$(e.target).closest('.menu-box, .menu-toggle').length) {
-            $('.menu-toggle').removeClass('active');
-            $('.menu-box').removeClass('active');
-            $('body').removeClass('menu-open');
+    // 打开/关闭移动端菜单
+    mobileMenuToggle.addEventListener('click', function() {
+        if (menuBox.classList.contains('active')) {
+            closeMobileMenu();
+        } else {
+            mobileMenuToggle.classList.add('active');
+            menuBox.classList.add('active');
+            document.body.classList.add('menu-open');
         }
     });
     
-    // 阻止菜单内部点击事件冒泡
-    $('.menu-box').click(function(e) {
-        e.stopPropagation();
+    // 关闭移动端菜单
+    function closeMobileMenu() {
+        mobileMenuToggle.classList.remove('active');
+        menuBox.classList.remove('active');
+        document.body.classList.remove('menu-open');
+    }
+    
+    // 点击菜单项后关闭菜单
+    const menuLinks = menuBox.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', closeMobileMenu);
+    });
+    
+    // 点击菜单背景关闭菜单
+    menuBox.addEventListener('click', function(e) {
+        if (e.target === menuBox) {
+            closeMobileMenu();
+        }
+    });
+    
+    // ESC键关闭菜单
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menuBox.classList.contains('active')) {
+            closeMobileMenu();
+        }
     });
 }); 

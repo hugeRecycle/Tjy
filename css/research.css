@@ -1,126 +1,136 @@
 .itemBlock {
-	background-color: #FFFFFF;
-	flex-direction: column;
+    background-color: #FFFFFF;
+    flex-direction: column;
 }
+
 .itemBlock:nth-child(2n) {
-	background-color: #F5F5F5;
+    background-color: #F5F5F5;
 }
+
 .itemBlock h5 {
-	margin-bottom: 32px;
+    margin-bottom: 32px;
 }
+
 .itemBlock .article-img {
-	float: right;
-	width: 500px;
+    float: right;
+    width: 500px;
 }
+
 .itemBlock:nth-child(2n) .article-img {
-	float: left;
-	width: 500px;
+    float: left;
+    width: 500px;
 }
+
 .itemBlock .article-txt {
-	float: left;
-	width: 664px;
-	margin-left: 0;
-	margin-right: 36px;
+    float: left;
+    width: calc(100% - 536px);
+    margin-left: 0;
+    margin-right: 36px;
 }
+
 .itemBlock:nth-child(2n) .article-txt {
-	float: right;
-	width: 664px;
-	margin-left: 36px;
-	margin-right: 0;
+    float: right;
+    width: calc(100% - 536px);
+    margin-left: 36px;
+    margin-right: 0;
 }
+
 .itemBlock .article-txt>h6 {
-	font-size: 24px;
-	color: rgba(0, 0, 0, .85);
-	font-family: Avenir-Medium;
-	font-weight: 500;
-	line-height: 33px;
+    font-size: 24px;
+    color: rgba(0, 0, 0, .85);
+    font-family: Avenir-Medium;
+    font-weight: 500;
+    line-height: 33px;
 }
+
 .itemBlock .article-txt>p {
-	margin-top: 12px;
-	font-size: 22px;
-	font-family: Avenir-Roman;
-	line-height: 30px;
-	color: rgba(0, 0, 0, .65);
+    margin-top: 12px;
+    font-size: 22px;
+    font-family: Avenir-Roman;
+    line-height: 30px;
+    color: rgba(0, 0, 0, .65);
 }
+
 .itemBlock .article-txt>ul {
-	margin-top: 12px;
-	margin-left: 26px;
+    margin-top: 12px;
+    margin-left: 26px;
 }
+
 .itemBlock .article-txt>ul>li {
-	font-size: 22px;
-	color: rgba(0, 0, 0, .65);
-	font-family: Avenir-Roman;
-	line-height: 30px;
-	margin-top: 6px;
-	list-style-type: disc;
+    font-size: 22px;
+    color: rgba(0, 0, 0, .65);
+    font-family: Avenir-Roman;
+    line-height: 30px;
+    margin-top: 6px;
+    list-style-type: disc;
 }
+
 .itemBlock1 {
-	flex-direction: row;
+    flex-direction: row;
 }
+
 .itemBlock1 .article-txt>p {
-	margin-top: 0;
-	color: rgba(0, 0, 0, .85);
+    margin-top: 0;
+    color: rgba(0, 0, 0, .85);
 }
+
 .itemBlock1 .article-txt {
-	float: none;
-	width: 100%;
+    float: none;
+    width: 100%;
 }
 
 /* 移动端适配 */
-@media screen and (max-width: 768px) {
-    .itemBlock {
-        padding: 30px 0;
-    }
-    
+@media screen and (max-width: 820px) {
+
     .itemBlock h5 {
         margin-bottom: 20px;
         font-size: 20px;
         line-height: 28px;
     }
-    
+
     .itemBlock .article-img,
     .itemBlock:nth-child(2n) .article-img {
         float: none;
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     .itemBlock .article-img img {
         width: 100%;
         height: auto;
         border-radius: 8px;
     }
-    
+
     .itemBlock .article-txt,
     .itemBlock:nth-child(2n) .article-txt {
         float: none;
         width: 100%;
         margin: 0;
     }
-    
+
     .itemBlock .article-txt>h6 {
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 10px;
     }
-    
+
     .itemBlock .article-txt>p {
         font-size: 16px;
         line-height: 24px;
         margin-top: 10px;
     }
-    
+
     .itemBlock .article-txt>ul {
         margin-top: 15px;
         margin-left: 20px;
     }
-    
+
     .itemBlock .article-txt>ul>li {
         font-size: 16px;
         line-height: 24px;
         margin-top: 8px;
     }
-    
+
     .itemBlock1 .article-txt>p {
         font-size: 16px;
         line-height: 24px;
@@ -128,31 +138,46 @@
 }
 
 /* 平板适配 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
     .itemBlock .article-img,
     .itemBlock:nth-child(2n) .article-img {
-        width: 400px;
+        width: 390px;
     }
-    
+
     .itemBlock .article-txt,
     .itemBlock:nth-child(2n) .article-txt {
-        width: 500px;
-        margin-left: 30px;
-        margin-right: 30px;
+        width: calc(100% - 410px);
+
     }
-    
+
+    .itemBlock .article-txt {
+        margin-right: 20px;
+        margin-left: 0;
+    }
+
+    .itemBlock:nth-child(2n) .article-txt {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
     .itemBlock .article-txt>h6 {
         font-size: 22px;
         line-height: 30px;
     }
-    
+
     .itemBlock .article-txt>p {
         font-size: 20px;
         line-height: 28px;
     }
-    
+
     .itemBlock .article-txt>ul>li {
         font-size: 20px;
         line-height: 28px;
+    }
+
+    .itemBlock1 .article-txt {
+        width: 100%;
+        margin: 0 auto;
     }
 }
