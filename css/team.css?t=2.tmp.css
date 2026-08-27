@@ -99,34 +99,121 @@
 	line-height: 32px;
 	margin-top: 16px;
 }
-table {
-    width: 100%;
-margin: 0 auto;
-  }
+.alumni-block .container-box {
+	padding-top: 72px;
+	padding-bottom: 76px;
+}
 
-  table th {
-    font-size: 28px;
-    color: #428DDA;
-    text-align: center;
-    line-height: 40px
-  }
-  table td {
-    font-size: 22px;
-    text-align: center;
-    line-height: 30px
-  }
-  table th:first-child,
-  table td:first-child {
-    width: 30%
-  }
-  table th:nth-child(2),
-  table td:nth-child(2) {
-    width: 20%
-  }
-  table th:last-child,
-  table td:last-child {
-    width: 40%
-  }
+.alumni-directory {
+	position: relative;
+}
+
+.alumni-directory::before {
+	position: absolute;
+	top: -12px;
+	left: 0;
+	width: 64px;
+	height: 3px;
+	content: "";
+	background: #2d78c4;
+}
+
+.alumni-table-wrap {
+	overflow-x: auto;
+	border: 1px solid rgba(12, 51, 117, 0.12);
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.84);
+	box-shadow: 0 12px 28px rgba(12, 51, 117, 0.08);
+}
+
+.alumni-table-wrap:focus-visible {
+	outline: 3px solid rgba(45, 120, 196, 0.35);
+	outline-offset: 4px;
+}
+
+.alumni-table {
+	width: 100%;
+	min-width: 780px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.alumni-table caption {
+	padding: 20px 28px 16px;
+	border-bottom: 1px solid rgba(12, 51, 117, 0.1);
+	color: rgba(12, 51, 117, 0.68);
+	font-family: Avenir-Oblique;
+	font-size: 15px;
+	letter-spacing: 0.02em;
+	line-height: 22px;
+	text-align: left;
+}
+
+.alumni-table th {
+	padding: 15px 22px;
+	background: #0c3375;
+	color: #fff;
+	font-family: Avenir-Medium;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	line-height: 22px;
+	text-align: left;
+}
+
+.alumni-table th:first-child,
+.alumni-table td:first-child {
+	width: 19%;
+}
+
+.alumni-table th:nth-child(2),
+.alumni-table td:nth-child(2) {
+	width: 18%;
+}
+
+.alumni-table th:nth-child(3),
+.alumni-table td:nth-child(3) {
+	width: 25%;
+}
+
+.alumni-table th:last-child,
+.alumni-table td:last-child {
+	width: 38%;
+}
+
+.alumni-table td {
+	padding: 19px 22px;
+	border-bottom: 1px solid rgba(12, 51, 117, 0.09);
+	color: rgba(0, 0, 0, 0.7);
+	font-family: Avenir-Roman;
+	font-size: 17px;
+	line-height: 26px;
+	text-align: left;
+	vertical-align: middle;
+	transition: background-color 180ms ease, color 180ms ease;
+}
+
+.alumni-table tbody tr:last-child td {
+	border-bottom: 0;
+}
+
+.alumni-table tbody tr:hover td {
+	background: #edf5fc;
+	color: rgba(0, 0, 0, 0.82);
+}
+
+.alumni-table td:first-child {
+	color: #1d64ae;
+	font-family: Avenir-Medium;
+	font-size: 16px;
+	white-space: nowrap;
+}
+
+.alumni-table td:nth-child(2) {
+	color: rgba(12, 51, 117, 0.94);
+	font-family: Avenir-Medium;
+	font-size: 18px;
+}
 
 /* 移动端适配 */
 @media screen and (max-width: 820px) {
@@ -216,12 +303,106 @@ margin: 0 auto;
         line-height: 22px;
         margin-top: 10px;
     }
-table th {
-    font-size: 16px;
-  }
-table td {
-    font-size: 13px;
-  }
+    .alumni-block .container-box {
+        padding-top: 48px;
+        padding-bottom: 52px;
+    }
+
+    .alumni-directory::before {
+        top: -8px;
+        width: 44px;
+    }
+
+    .alumni-table-wrap {
+        overflow: visible;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .alumni-table {
+        min-width: 0;
+        border-collapse: separate;
+        border-spacing: 0 12px;
+    }
+
+    .alumni-table caption {
+        display: block;
+        padding: 0 0 8px;
+        border: 0;
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .alumni-table thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+    }
+
+    .alumni-table,
+    .alumni-table tbody,
+    .alumni-table tr,
+    .alumni-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .alumni-table tbody tr {
+        overflow: hidden;
+        border: 1px solid rgba(12, 51, 117, 0.12);
+        border-radius: 9px;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(12, 51, 117, 0.06);
+    }
+
+    .alumni-table td,
+    .alumni-table td:first-child,
+    .alumni-table td:nth-child(2),
+    .alumni-table td:nth-child(3),
+    .alumni-table td:last-child {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        min-height: 38px;
+        padding: 8px 14px 8px 43%;
+        border: 0;
+        color: rgba(0, 0, 0, 0.72);
+        font-family: Avenir-Roman;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .alumni-table td:first-child {
+        padding-top: 14px;
+    }
+
+    .alumni-table td:last-child {
+        padding-bottom: 14px;
+    }
+
+    .alumni-table td::before {
+        position: absolute;
+        top: 8px;
+        left: 14px;
+        width: 35%;
+        color: #1d64ae;
+        content: attr(data-label);
+        font-family: Avenir-Medium;
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        line-height: 20px;
+    }
+
+    .alumni-table td:first-child::before {
+        top: 14px;
+    }
 
 }
 
@@ -256,12 +437,19 @@ table td {
         height: 200px;
     }
 
-table th {
-    font-size: 24px;
-  }
-table td {
-    font-size: 19px;
-  }
+    .alumni-table td,
+    .alumni-table td:first-child,
+    .alumni-table td:nth-child(2),
+    .alumni-table td:nth-child(3),
+    .alumni-table td:last-child {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .alumni-table td::before {
+        font-size: 14px;
+        line-height: 23px;
+    }
 }
 
 @media screen and (min-width: 821px) and (max-width: 1024px) {
@@ -299,6 +487,25 @@ table td {
 	.itemBlock ul li h6 {
 		font-size: 18px;
 		line-height: 26px;
+	}
+
+	.alumni-table th {
+		padding: 14px 16px;
+		font-size: 14px;
+	}
+
+	.alumni-table td {
+		padding: 16px;
+		font-size: 15px;
+		line-height: 23px;
+	}
+
+	.alumni-table td:first-child {
+		font-size: 14px;
+	}
+
+	.alumni-table td:nth-child(2) {
+		font-size: 16px;
 	}
 
 }
