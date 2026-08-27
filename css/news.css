@@ -1,0 +1,80 @@
+.itemBlock .article-txt li {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.itemBlock .article-txt li:last-child {
+    margin-bottom: 0;
+}
+
+.itemBlock .article-txt .dateBox {
+    width: 180px;
+    line-height: 27px;
+    font-size: 18px;
+    color: #525252;
+    font-family: Avenir-Roman;
+}
+
+.itemBlock .article-txt .txt {
+    flex: 1;
+    font-family: Avenir-Medium;
+    font-weight: 500;
+}
+
+.itemBlock .article-txt p {
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.itemBlock .article-txt img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.itemBlock .article-txt a {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0C3375;
+    line-height: 22px;
+    display: inline-block;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+    .itemBlock .article-txt li {
+        flex-direction: column;
+    }
+
+    .itemBlock .article-txt li .dateBox {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .itemBlock .article-txt li p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .itemBlock .article-txt li img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .itemBlock .article-txt li a {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

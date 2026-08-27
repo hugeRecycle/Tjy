@@ -1,0 +1,121 @@
+.itemBlock {
+    background-color: #FFFFFF;
+}
+
+.itemBlock:nth-child(2n) {
+    background-color: #F5F5F5;
+}
+
+.itemBlock .list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px 80px;
+}
+
+.itemBlock .item-box {
+    width: calc(50% - 40px);
+}
+
+.itemBlock img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.itemBlock h6 {
+    font-size: 22px;
+    color: rgba(0, 0, 0, .85);
+    font-family: Avenir-Heavy;
+    font-weight: 800;
+    line-height: 30px;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.itemBlock .swiperImg-list {
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.itemBlock .swiper-button-prev,
+.itemBlock .swiper-button-next {
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.itemBlock .swiper-button-prev {
+    left: 16px;
+}
+
+.itemBlock .swiper-button-next {
+    right: 16px;
+}
+
+/* 移动端适配 */
+@media screen and (max-width: 820px) {
+    .itemBlock .list {
+        gap: 30px 0;
+    }
+
+    .itemBlock .item-box {
+        width: 100%;
+    }
+
+    .itemBlock img,
+    .itemBlock .swiperImg-list {
+        height: 300px;
+    }
+
+    .itemBlock h6 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
+/* 平板适配 */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+    .itemBlock img,
+    .itemBlock .swiperImg-list {
+        height: 400px;
+    }
+
+    .itemBlock h6 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+    .itemBlock .list {
+        gap: 40px 60px;
+    }
+    
+    .itemBlock .item-box {
+        width: calc(50% - 30px);
+    }
+
+    .itemBlock img {
+        height: 400px;
+    }
+
+    .itemBlock h6 {
+        margin-top: 15px;
+    }
+}
