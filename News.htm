@@ -70,7 +70,7 @@
     <div class="txt">
         <p>EIE Special Seminar | Wenlong Gao | 潜在对称性Latent Symmetry：一种图论发掘的隐藏对称性</p>
         <img src="__local/6/32/66/957D1161D65C689A26BF2A11190_1F783FC9_301D8.jpg" />
-        <a data-url="noPath">Read More &gt;</a>
+        <a data-url="News/newsDetail.htm">Read More &gt;</a>
     </div>
 </li>
 <li>
@@ -210,7 +210,8 @@
                         if (url == 'noPath') {
                             return;
                         }
-                        window.open(url, '_blank')
+                        const target = /^https?:\/\//i.test(url) ? '_blank' : '_self';
+                        window.open(url, target)
                     }
                 }
             });
